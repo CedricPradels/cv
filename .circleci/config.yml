@@ -1,18 +1,10 @@
 version: 2.1
 orbs: 
   aws-s3: circleci/aws-s3@3.0.0
-executors: 
-  node-executor:
-    docker:
-      - image: cimg/node:17.2.0
-    working_directory: /tmp
-  python-executor: 
-    docker:
-      - image: 'cimg/python:3.6'
-    working_directory: /tmp
 jobs:
   build:
-    executor: node-executor
+    docker:
+      - image: cimg/node:17.2.0
     steps:
       - checkout
       - run:
@@ -21,16 +13,11 @@ jobs:
       - run:
           name: Build
           command: yarn build
-      - persist_to_workspace:
-          root: .
-          paths:
-              - out
   deploy:
-    executor: python-executor
+    docker:
+      - image: 'cimg/python:3.6'
     steps:
-      - attach_workspace:
-          at: /tmp/out
-      - run: ls
+      - run: mkdir out && echo "lorem ipsum" > out/foo.txt
       - aws-s3/sync:
           aws-access-key-id: AWS_ACCESS_KEY_ID_BLUE
           aws-region: AWS_REGION_BLUE
@@ -42,4 +29,6 @@ workflows:
   ci:
     jobs:
       - build
-      - deploy
+      - deploy:
+          requires:
+            - build
