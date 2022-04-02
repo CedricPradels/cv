@@ -12,16 +12,17 @@ jobs:
           name: Build
           command: yarn build
   deploy:
-    docker: 
+    docker:
       - image: cimg/node:17.2.0
-    steps: 
+    steps:
+      - run: 
+          name: Remove AWS S3 content
+          command: aws s3 rm s3://cv-ced/ --recursive
       - run:
-          name: Remove S3 content
-          command: aws s3 rm s3://$AWS_S3_NAME/ --recursive
-      - run:
-          name: Copy files
+          name: Copy files to AWS S3
           command: echo files copied
 workflows:
   ci:
     jobs:
       - build
+      - deploy
