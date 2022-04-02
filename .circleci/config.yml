@@ -39,7 +39,8 @@ jobs:
     executor: python-executor
     steps:
       - attach_workspace:
-          at: ./ 
+          at: .
+      - run: pwd
       - aws-s3/sync:
           aws-access-key-id: AWS_ACCESS_KEY_ID_BLUE
           aws-region: AWS_REGION_BLUE
