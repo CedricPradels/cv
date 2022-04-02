@@ -3,9 +3,6 @@ jobs:
   build:
     docker:
       - image: cimg/node:17.2.0
-        auth:
-          username: $DOCKERHUB_USER
-          password: $DOCKERHUB_PASSWORD
     steps:
       - checkout
       - run: echo "hello world"
@@ -13,5 +10,3 @@ workflows:
   ci:
     jobs:
       - build:
-          context:
-            - docker-hub-creds
