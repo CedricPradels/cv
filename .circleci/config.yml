@@ -22,6 +22,7 @@ jobs:
           aws-access-key-id: AWS_ACCESS_KEY_ID_BLUE
           aws-region: AWS_REGION_BLUE
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY_BLUE
+          arguments: '--delete'
           from: out
           to: 's3://cv-ced'
 workflows:
