@@ -9,4 +9,4 @@ jobs:
 workflows:
   ci:
     jobs:
-      - build:
+      - build
