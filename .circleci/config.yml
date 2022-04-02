@@ -20,6 +20,9 @@ jobs:
       - run: mkdir bucket && echo "lorem ipsum" > bucket/build_asset.txt
       - aws-s3/copy:
           arguments: '--dryrun'
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          aws-region: AWS_REGION
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           from: bucket/build_asset.txt
           to: 's3://cv-ced/'
 workflows:
