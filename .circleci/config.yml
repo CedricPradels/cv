@@ -45,9 +45,15 @@ jobs:
           from: out
           to: 's3://cv-ced'
 workflows:
-  ci:
+  production:
     jobs:
-      - build
+      - build:
+          filters: &prod-filters
+            tags: 
+              only: /v[0-9]+\.[0-9]+\.[0-9]+/ 
+            branches: 
+              ignore: /.*/
       - deploy:
+          filters: *prod-filters
           requires:
             - build
