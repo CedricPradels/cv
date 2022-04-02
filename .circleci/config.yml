@@ -5,11 +5,9 @@ executors:
   python-executor: 
     docker:
       - image: 'cimg/python:3.6'
-    working_directory: /tmp
   node-executor: 
     docker:
       - image: cimg/node:17.2.0
-    working_directory: /tmp
 jobs:
   build:
     executor: node-executor
@@ -31,7 +29,9 @@ jobs:
       - run:
           name: Build
           command: yarn build
-      - run: ls
+      - run: 
+          name: pwd
+          command: pwd
       - persist_to_workspace:
           root: .
           paths:
@@ -41,7 +41,6 @@ jobs:
     steps:
       - attach_workspace:
           at: /tmp
-      - run: ls
       - aws-s3/sync:
           aws-access-key-id: AWS_ACCESS_KEY_ID_BLUE
           aws-region: AWS_REGION_BLUE
