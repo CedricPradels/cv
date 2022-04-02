@@ -5,7 +5,12 @@ jobs:
       - image: cimg/node:17.2.0
     steps:
       - checkout
-      - run: echo "hello world"
+      - run:
+          name: Install dependencies
+          command: yarn install --immutable
+      - run:
+          name: Build
+          command: yarn build
 workflows:
   ci:
     jobs:
