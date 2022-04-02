@@ -13,11 +13,17 @@ jobs:
       - run:
           name: Build
           command: yarn build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - out
   deploy:
     docker:
       - image: 'cimg/python:3.6'
     steps:
-      - run: mkdir out && echo "lorem ipsum" > out/foo.txt
+      - attach_workspace:
+          at: /out
+      - run: ls
       - aws-s3/sync:
           aws-access-key-id: AWS_ACCESS_KEY_ID_BLUE
           aws-region: AWS_REGION_BLUE
