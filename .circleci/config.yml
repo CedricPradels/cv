@@ -21,7 +21,7 @@ jobs:
       - aws-s3/copy:
           arguments: '--dryrun'
           from: bucket/build_asset.txt
-          to: 's3://cv-ced'
+          to: 's3://cv-ced/'
 workflows:
   ci:
     jobs:
