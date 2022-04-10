@@ -11,12 +11,25 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Footer = styled.footer`
-  position: sticky;
-  bottom: 0;
+export const Footer = styled.div``;
+
+export const Header = styled.div`
+  position: relative;
+  background-image: url("/img/processor.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(127, 127, 129, 0.85);
+  }
 `;
 
-export const Header = styled.header`
-  position: sticky;
-  top: 0;
+export const HeaderContent = styled.div`
+  position: relative;
 `;

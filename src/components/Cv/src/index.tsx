@@ -5,13 +5,15 @@ import { Skills } from "@components/Skills";
 import { Training } from "@components/Training";
 import { Contact } from "@components/Contact";
 import { VFC } from "react";
-import { Container, Footer, Wrapper, Header } from "./ui";
+import { Container, Footer, Wrapper, Header, HeaderContent } from "./ui";
 
 export const Cv: VFC = () => {
   return (
     <Container>
       <Header>
-        <Title />
+        <HeaderContent>
+          <Title />
+        </HeaderContent>
       </Header>
       <Skills />
       <Experiences />
