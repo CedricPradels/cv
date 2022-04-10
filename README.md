@@ -11,7 +11,8 @@
 - Dev
   - 3h00-4h00: 1h
   - 8h00-9h00: 1h
-  - 7h30-
+  - 7h30-8h00: 30mn
+  - 18h10
 - Design Wireframe
   - 10h00 - 10h30 30mn
 - Desiging CV
