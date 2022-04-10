@@ -1,10 +1,8 @@
-import { GetServerSideProps, NextPage } from "next";
-import styled from "styled-components";
+import { NextPage } from "next";
+import { Cv } from "@components/Cv";
 
-const Container = styled.div``;
-
-const Home: NextPage = () => {
-  return <Container>HelloWorld</Container>;
+const CvPage: NextPage = () => {
+  return <Cv />;
 };
 
-export default Home;
+export default CvPage;
