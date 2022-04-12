@@ -1,6 +1,6 @@
 import { Experiences } from "@components/Experiences";
 import { Other } from "@components/Other";
-import { Title } from "@components/Title";
+import { Introduction } from "@components/Introduction";
 import { Skills } from "@components/Skills";
 import { Training } from "@components/Training";
 import { Contact } from "@components/Contact";
@@ -10,7 +10,7 @@ import { Container, Wrapper } from "./ui";
 export const Cv: VFC = () => {
   return (
     <Container>
-      <Title />
+      <Introduction />
       <Skills />
       <Experiences />
       <Wrapper>
