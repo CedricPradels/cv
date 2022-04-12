@@ -11,5 +11,5 @@ export const theme = {
     neutral100: "#A9A9AB",
     neutral110: "#7F7F81",
   },
-  font: ["Roboto", "sans-serif"].join(","),
+  font: ["Lato", "sans-serif"].join(","),
 };

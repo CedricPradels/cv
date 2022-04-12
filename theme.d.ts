@@ -1,4 +1,4 @@
-import { theme } from ".";
+import { theme } from "./src/design-system/theme";
 
 type CustomTheme = typeof theme;
 
