@@ -1,3 +1,4 @@
 * Heading 
 ** Subheading 
 - TODO lorem ispum
+- DONE lorem ipsum 
