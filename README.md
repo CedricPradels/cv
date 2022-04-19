@@ -68,7 +68,7 @@ Afin de pouvoir écrire des TU et obtenir le code coverage
 Points: 8
 
 - [x] Configuration du framework
-- [ ] Configuration du render
+- [x] Configuration du render
 - [ ] Configuration du code coverage
 - [ ] Ajout du code coverage à la CI
 - [ ] Ecrire les test manquants
