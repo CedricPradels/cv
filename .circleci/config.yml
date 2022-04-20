@@ -1,16 +1,16 @@
 version: 2.1
-orbs: 
+orbs:
   aws-s3: circleci/aws-s3@3.0.0
-executors: 
-  python-executor: 
+executors:
+  python:
     docker:
-      - image: 'cimg/python:3.6'
-  node-executor: 
+      - image: cimg/python:3.6
+  node:
     docker:
       - image: cimg/node:17.2.0
 jobs:
   build:
-    executor: node-executor
+    executor: node
     steps:
       - checkout
       - restore_cache:
@@ -32,8 +32,26 @@ jobs:
           root: .
           paths:
             - out
+  test:
+    executor: node
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install dependencies
+          command: yarn install --immutable
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+      - store_artifacts:
+          path: coverage
   deploy:
-    executor: python-executor
+    executor: python
     steps:
       - attach_workspace:
           at: .
@@ -41,18 +59,27 @@ jobs:
           aws-access-key-id: AWS_ACCESS_KEY_ID_BLUE
           aws-region: AWS_REGION_BLUE
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY_BLUE
-          arguments: '--delete'
+          arguments: "--delete"
           from: out
-          to: 's3://cv-ced'
+          to: "s3://cv-ced"
 workflows:
+  stage:
+    jobs:
+      - build:
+          filters: &stage-filters
+            tags:
+              ignore: /.*/
+      - test
   production:
     jobs:
       - build:
           filters: &prod-filters
-            tags: 
-              only: /v[0-9]+\.[0-9]+\.[0-9]+/ 
-            branches: 
+            tags:
+              only: /v[0-9]+\.[0-9]+\.[0-9]+/
+            branches:
               ignore: /.*/
+      - test:
+          filters: *prod-filters
       - deploy:
           filters: *prod-filters
           requires:

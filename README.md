@@ -70,7 +70,7 @@ Points: 8
 - [x] Configuration du framework
 - [x] Configuration du render
 - [x] Configuration du code coverage
-- [ ] Ajout du code coverage à la CI
+- [ ] Ajout des test et du code coverage à la CI
 - [ ] Ecrire les test manquants
 
 ## Done
