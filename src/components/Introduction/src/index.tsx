@@ -14,7 +14,7 @@ import {
 
 export const Introduction: VFC = () => {
   return (
-    <Container>
+    <Container data-testid={Introduction.name}>
       <Name>{data.name}</Name>
       <Content>
         <Wrapper>
