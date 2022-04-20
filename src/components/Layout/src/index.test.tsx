@@ -5,6 +5,7 @@ describe(Layout.name, () => {
   it("Render children", () => {
     const children = "Hello world";
     const { queryByText } = render(<Layout>{children}</Layout>);
-    expect(queryByText(children)).not.toBeNull();
+
+    expect(queryByText(children)).toBeInTheDocument();
   });
 });
