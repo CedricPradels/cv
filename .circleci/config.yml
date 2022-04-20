@@ -24,7 +24,7 @@ jobs:
           name: Save Yarn Package Cache
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
-            - node_modules
+            - ~/.cache/yarn
       - run:
           name: Build
           command: yarn build
@@ -47,10 +47,10 @@ jobs:
           name: Save Yarn Package Cache
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
-            - node_modules
+            - ~/.cache/yarn
       - run:
           name: Run tests and generate coverage
-          command: yarn test
+          command: yarn test --ci --runInBand
       - store_artifacts:
           path: coverage
   deploy:
