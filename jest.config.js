@@ -19,6 +19,13 @@ const customJestConfig = {
     "^@components/(.*)$": "<rootDir>/src/components/$1",
     "^@design-system/(.*)$": "<rootDir>/src/design-system/$1",
   },
+  collectCoverage: true,
+  collectCoverageFrom: ["./src/**"],
+  coverageThreshold: {
+    global: {
+      lines: 90,
+    },
+  },
 };
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
