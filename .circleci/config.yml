@@ -48,6 +48,9 @@ jobs:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
+      - run:
+          name: Run tests and generate coverage
+          commmand: yarn dev
       - store_artifacts:
           path: coverage
   deploy:
