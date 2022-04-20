@@ -50,7 +50,7 @@ jobs:
             - node_modules
       - run:
           name: Run tests and generate coverage
-          commmand: yarn dev
+          command: yarn dev
       - store_artifacts:
           path: coverage
   deploy:
