@@ -50,7 +50,7 @@ jobs:
             - node_modules
       - run:
           name: Run tests and generate coverage
-          command: yarn dev
+          command: yarn test
       - store_artifacts:
           path: coverage
   deploy:
@@ -72,7 +72,8 @@ workflows:
           filters: &stage-filters
             tags:
               ignore: /.*/
-      - test
+      - test:
+          filters: *stage-filters
   production:
     jobs:
       - build:
