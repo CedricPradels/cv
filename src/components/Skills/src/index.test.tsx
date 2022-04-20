@@ -3,8 +3,8 @@ import { render } from "@utils/customRender";
 
 describe(Skills.name, () => {
   it("should have a title", () => {
-    const { getByText } = render(<Skills />);
+    const { queryByText } = render(<Skills />);
 
-    expect(getByText("Compétences")).toBeInTheDocument();
+    expect(queryByText("Compétences")).toBeInTheDocument();
   });
 });

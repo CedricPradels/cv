@@ -3,8 +3,8 @@ import { render } from "@utils/customRender";
 
 describe(Other.name, () => {
   it("should render a label", () => {
-    const { getByText } = render(<Other />);
+    const { queryByText } = render(<Other />);
 
-    expect(getByText("Other")).toBeInTheDocument();
+    expect(queryByText("Other")).toBeInTheDocument();
   });
 });

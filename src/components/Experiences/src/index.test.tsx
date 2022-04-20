@@ -3,8 +3,8 @@ import { render } from "@utils/customRender";
 
 describe(Experiences.name, () => {
   it("should render a title", () => {
-    const { getByText } = render(<Experiences />);
+    const { queryByText } = render(<Experiences />);
 
-    expect(getByText("Expériences")).toBeInTheDocument();
+    expect(queryByText("Expériences")).toBeInTheDocument();
   });
 });
