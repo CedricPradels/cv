@@ -1,4 +1,5 @@
 import { VFC } from "react";
+import { data } from "./data";
 import {
   Container,
   Button,
@@ -14,21 +15,17 @@ import {
 export const Introduction: VFC = () => {
   return (
     <Container>
-      <Name>Cédric Pradels</Name>
+      <Name>{data.name}</Name>
       <Content>
         <Wrapper>
-          <Title>Développeur Web</Title>
-          <Description>
-            Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
-            cillum dolor. Voluptate exercitation incididunt aliquip deserunt
-            reprehenderit elit laborum.
-          </Description>
+          <Title>{data.title}</Title>
+          <Description>{data.description}</Description>
           <ButtonWrapper>
             <Button href={"mailto:cedric.pradels@gmail.com"}>
-              cedric.pradels@gmail.com
+              {data.email}
             </Button>
             <Button href={"tel:+33671370267"} secondary>
-              06.71.37.02.67
+              {data.phone}
             </Button>
           </ButtonWrapper>
         </Wrapper>

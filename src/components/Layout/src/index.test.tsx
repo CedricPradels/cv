@@ -1,8 +1,10 @@
-import React from "react";
 import { render } from "@utils/customRender";
-import { Layout } from ".";
+import { Layout } from "@components/Layout";
 
-it("Init test", () => {
-  const { baseElement } = render(<Layout />);
-  expect(baseElement).toBeInTheDocument();
+describe(Layout.name, () => {
+  it("Render children", () => {
+    const children = "Hello world";
+    const { queryByText } = render(<Layout>{children}</Layout>);
+    expect(queryByText(children)).not.toBeNull();
+  });
 });

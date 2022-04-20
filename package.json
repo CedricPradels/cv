@@ -25,7 +25,7 @@
     "build": "next build && next export",
     "start": "next start",
     "test": "jest",
-    "test:watch": "jest --coverage=false --watchAll",
+    "test:watch": "jest --coverage=false --watchAll --verbose",
     "lint": "next lint"
   }
 }
