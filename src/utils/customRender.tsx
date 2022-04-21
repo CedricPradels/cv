@@ -1,15 +1,11 @@
-import React, { FC, ReactElement } from "react";
+import { ReactElement } from "react";
 import { render, RenderOptions, RenderResult } from "@testing-library/react";
 import { Layout } from "@components/Layout";
-
-const AllTheProviders: FC = ({ children }) => {
-  return <Layout>{children}</Layout>;
-};
 
 const customRender = (
   ui: ReactElement,
   options?: RenderOptions
-): RenderResult => render(ui, { wrapper: AllTheProviders, ...options });
+): RenderResult => render(ui, { wrapper: Layout, ...options });
 
 export * from "@testing-library/react";
 
