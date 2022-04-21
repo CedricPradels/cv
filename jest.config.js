@@ -20,7 +20,11 @@ const customJestConfig = {
     "^@design-system/(.*)$": "<rootDir>/src/design-system/$1",
   },
   collectCoverage: true,
-  collectCoverageFrom: ["./src/**"],
+  collectCoverageFrom: [
+    "src/**",
+    "!src/pages/*",
+    "!src/utils/customRender.tsx",
+  ],
   coverageThreshold: {
     global: {
       lines: 90,

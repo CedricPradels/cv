@@ -9,7 +9,7 @@ import { Container, Wrapper } from "./ui";
 
 export const Cv: VFC = () => {
   return (
-    <Container>
+    <Container data-testid={Cv.name}>
       <Introduction />
       <Skills />
       <Experiences />
