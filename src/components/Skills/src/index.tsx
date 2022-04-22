@@ -7,7 +7,7 @@ import { Section } from "@components/Srection";
 
 export const Skills: VFC = () => {
   return (
-    <Section title="Compétences">
+    <Section title="Compétences" data-testid={Skills.name}>
       <SkillsWrapper>
         {skills.map(({ label, logo, rating }) => (
           <li key={label}>

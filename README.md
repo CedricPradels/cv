@@ -42,6 +42,8 @@ Afin de juger en détail de la corélation entre les expériences passées et mo
 - [ ] Créer les données
 - [ ] Créer le bloc Experiences
 
+## Doing
+
 ### Skills section
 
 En tant que recruteur, chef d'équipe, équipier,
@@ -57,7 +59,7 @@ Afin de juger rapidement de l'adéquation du profil avec mon besoin
 - [ ] Créer le bloc de skills
 - [ ] Insérer le bloc de skills
 
-## Doing
+## Done
 
 ### Configurer les test unitaires
 
@@ -67,9 +69,8 @@ Afin de pouvoir écrire des TU et obtenir le code coverage
 
 Points: 8
 
-- [ ] Configuration du framework
-- [ ] Configuration du code coverage
-- [ ] Ajout du code coverage à la CI
-- [ ] Ecrire les test manquants
-
-## Done
+- [x] Configuration du framework
+- [x] Configuration du render
+- [x] Configuration du code coverage
+- [x] Ajout des test et du code coverage à la CI
+- [x] Ecrire les test manquants
