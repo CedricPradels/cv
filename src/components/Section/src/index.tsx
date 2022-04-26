@@ -4,7 +4,7 @@ import { Container, Title } from "./ui";
 
 export const Section: FC<SectionProps> = ({ children, title }) => {
   return (
-    <Container>
+    <Container data-testid={Section.name}>
       <Title>{title}</Title>
       {children}
     </Container>

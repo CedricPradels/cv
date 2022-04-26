@@ -3,7 +3,7 @@ import { VFC } from "react";
 import { SkillsWrapper } from "./ui";
 
 import { skills } from "./data";
-import { Section } from "@components/Srection";
+import { Section } from "@components/Section";
 
 export const Skills: VFC = () => {
   return (
