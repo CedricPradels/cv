@@ -10,7 +10,7 @@ export const skills: { rating: number; logo: string; label: string }[] = [
     rating: 2,
   },
   {
-    logo: "/logos/typescript.png",
+    logo: "/logos/ts.png",
     label: "Typescript",
     rating: 3,
   },
@@ -51,7 +51,7 @@ export const skills: { rating: number; logo: string; label: string }[] = [
   },
   {
     logo: "/logos/storybook.png",
-    label: "Stoeybook",
+    label: "Storybook",
     rating: 2,
   },
   {

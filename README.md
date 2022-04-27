@@ -55,7 +55,7 @@ Afin de juger rapidement de l'adéquation du profil avec mon besoin
 - [x] Ajouter storybook
 - [x] Créer le composant d'évaluation
 - [x] Créer un composant de section
-- [ ] Créer la liste des compétence et de leurs niveau
+- [x] Créer la liste des compétence et de leurs niveau
 - [ ] Créer le bloc de skills
 - [ ] Insérer le bloc de skills
 
