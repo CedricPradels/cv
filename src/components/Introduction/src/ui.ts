@@ -79,7 +79,7 @@ export const Button = styled.a<ButtonProps>`
     secondary &&
     css`
       ${({ theme }) => css`
-        color: ${theme.colors.neutral110};
+        color: ${theme.colors.primary100};
         background-color: ${theme.colors.neutral5};
         border: 1px ${theme.colors.primary100} solid;
       `}
