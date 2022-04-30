@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
-export const SkillsWrapper = styled.ul`
-  column-count: 3;
+export const SkillsList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
 
-  margin-bottom: -16px;
-  & > li {
-    margin-bottom: 16px;
-  }
+export const SkillsWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
 `;

@@ -1,6 +1,12 @@
 import { VFC } from "react";
-import { Container } from "./ui";
+import { Section } from "@components/Section";
 
 export const Experiences: VFC = () => {
-  return <Container data-testid={Experiences.name}>Expériences</Container>;
+  return (
+    <Section
+      withBackground
+      testID={Experiences.name}
+      title="Expériences"
+    ></Section>
+  );
 };

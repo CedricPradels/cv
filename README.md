@@ -38,8 +38,8 @@ Afin de juger en détail de la corélation entre les expériences passées et mo
 
 5 points
 
-- [ ] Créer le container dans le Layout
-- [ ] Intégrer lse tailles de polices au thème
+- [x] Créer le container dans le Layout
+- [ ] Intégrer les tailles de polices au thème
 - [ ] Créer un composants liste
 - [ ] Créer les données
 - [ ] Créer le bloc Experiences

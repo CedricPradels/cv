@@ -1,12 +1,19 @@
 import { FC } from "react";
 import { SectionProps } from "./types";
-import { Container, Title } from "./ui";
+import { Container, Content, Title } from "./ui";
 
-export const Section: FC<SectionProps> = ({ children, title }) => {
+export const Section: FC<SectionProps> = ({
+  children,
+  title,
+  withBackground,
+  testID = Section.name,
+}) => {
   return (
-    <Container data-testid={Section.name}>
-      <Title>{title}</Title>
-      {children}
+    <Container withBackground={withBackground === true} data-testid={testID}>
+      <Content>
+        <Title>{title}</Title>
+        {children}
+      </Content>
     </Container>
   );
 };
