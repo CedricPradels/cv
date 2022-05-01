@@ -7,10 +7,10 @@ import {
   ButtonWrapper,
   Name,
   Description,
-  Title,
   Illustration,
   Wrapper,
 } from "./ui";
+import { Title } from "@components/Title";
 
 export const Introduction: VFC = () => {
   return (
@@ -18,7 +18,7 @@ export const Introduction: VFC = () => {
       <Name>{data.name}</Name>
       <Content>
         <Wrapper>
-          <Title>{data.title}</Title>
+          <Title level="1">{data.title}</Title>
           <Description>{data.description}</Description>
           <ButtonWrapper>
             <Button href={"mailto:cedric.pradels@gmail.com"}>

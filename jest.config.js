@@ -24,6 +24,7 @@ const customJestConfig = {
     "src/**",
     "!src/pages/*",
     "!src/utils/customRender.tsx",
+    "!src/**/*.stories.tsx",
   ],
   coverageThreshold: {
     global: {

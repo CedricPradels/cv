@@ -12,7 +12,9 @@ export const Cv: VFC = () => {
     <Container data-testid={Cv.name}>
       <Introduction />
       <Skills />
+
       <Experiences />
+
       <Wrapper>
         <div>
           <Training />

@@ -28,6 +28,10 @@ Goals: sections skills et expériences en ligne. TU fonctionnels et réalisés.
 
 ## Todo
 
+## Doing
+
+## Done
+
 ### Experiences Section
 
 En tant que recruteur, chef d'équipe, équipier,
@@ -36,13 +40,12 @@ Afin de juger en détail de la corélation entre les expériences passées et mo
 
 5 points
 
-- [ ] Créer le container dans le Layout
-- [ ] Intégrer lse tailles de polices au thème
-- [ ] Créer un composants liste
-- [ ] Créer les données
-- [ ] Créer le bloc Experiences
-
-## Doing
+- [x] Créer le container dans le Layout
+- [x] Intégrer les tailles de polices au thème
+- [x] Créer un composants liste
+- [x] Créer un composants titre
+- [x] Créer les données
+- [x] Créer le bloc Experiences
 
 ### Skills section
 
@@ -52,14 +55,12 @@ Afin de juger rapidement de l'adéquation du profil avec mon besoin
 
 5 points
 
-- [ ] Intégrer palette de spacing
-- [ ] Créer le composant d'évaluation
-- [ ] Créer un composant de section
-- [ ] Créer la liste des compétence et de leurs niveau
-- [ ] Créer le bloc de skills
-- [ ] Insérer le bloc de skills
-
-## Done
+- [x] Ajouter storybook
+- [x] Créer le composant d'évaluation
+- [x] Créer un composant de section
+- [x] Créer la liste des compétence et de leurs niveau
+- [x] Créer le bloc de skills
+- [x] Insérer le bloc de skills
 
 ### Configurer les test unitaires
 

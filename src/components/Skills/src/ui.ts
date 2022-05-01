@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  background-color: silver;
-  border: 1px solid black;
-  height: 200px;
+export const SkillsList = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+`;
+
+export const SkillsWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
 `;

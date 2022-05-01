@@ -1,4 +1,5 @@
 import { Introduction } from "@components/Introduction";
+import { Title } from "@components/Title";
 import { render } from "@utils/customRender";
 import { data } from "./data";
 
@@ -16,8 +17,9 @@ describe(Introduction.name, () => {
   });
 
   it("should render a title", () => {
-    const { queryByText } = render(<Introduction />);
+    const { queryByText, queryByTestId } = render(<Introduction />);
 
+    expect(queryByTestId(Title.name)).toBeInTheDocument();
     expect(queryByText(data.title)).toBeInTheDocument();
   });
 
@@ -30,13 +32,13 @@ describe(Introduction.name, () => {
   it("should email be an anchor tag", () => {
     const { queryByText } = render(<Introduction />);
 
-    expect(queryByText(data.email).tagName).toBe("A");
+    expect(queryByText(data.email)?.tagName).toBe("A");
   });
 
   it("should email anchor have href", () => {
     const { queryByText } = render(<Introduction />);
 
-    expect(queryByText(data.email).getAttribute("href")).toBe(
+    expect(queryByText(data.email)?.getAttribute("href")).toBe(
       "mailto:cedric.pradels@gmail.com"
     );
   });
@@ -50,13 +52,13 @@ describe(Introduction.name, () => {
   it("should phone be an anchor tag", () => {
     const { queryByText } = render(<Introduction />);
 
-    expect(queryByText(data.phone).tagName).toBe("A");
+    expect(queryByText(data.phone)?.tagName).toBe("A");
   });
 
   it("should phone anchor have href", () => {
     const { queryByText } = render(<Introduction />);
 
-    expect(queryByText(data.phone).getAttribute("href")).toBe(
+    expect(queryByText(data.phone)?.getAttribute("href")).toBe(
       "tel:+33671370267"
     );
   });
