@@ -1,6 +1,6 @@
 export const data = [
   {
-    start: new Date("07-09-2021"),
+    start: new Date("2021-09-07"),
     end: null,
     job: "Développeur front",
     company: "SeLoger",

@@ -5,6 +5,8 @@ export const Container = styled.ul`
 `;
 
 export const Item = styled.li`
+  padding-left: 16px;
+
   &:not(:last-child) {
     margin-bottom: 4px;
   }

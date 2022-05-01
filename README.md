@@ -30,6 +30,8 @@ Goals: sections skills et expériences en ligne. TU fonctionnels et réalisés.
 
 ## Doing
 
+## Done
+
 ### Experiences Section
 
 En tant que recruteur, chef d'équipe, équipier,
@@ -43,9 +45,7 @@ Afin de juger en détail de la corélation entre les expériences passées et mo
 - [x] Créer un composants liste
 - [x] Créer un composants titre
 - [x] Créer les données
-- [ ] Créer le bloc Experiences
-
-## Done
+- [x] Créer le bloc Experiences
 
 ### Skills section
 
