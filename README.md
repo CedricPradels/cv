@@ -41,7 +41,7 @@ Afin de juger en détail de la corélation entre les expériences passées et mo
 - [x] Créer le container dans le Layout
 - [x] Intégrer les tailles de polices au thème
 - [x] Créer un composants liste
-- [ ] Créer un composants titre
+- [x] Créer un composants titre
 - [x] Créer les données
 - [ ] Créer le bloc Experiences
 

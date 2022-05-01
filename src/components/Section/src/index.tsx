@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { SectionProps } from "./types";
-import { Container, Content, Title } from "./ui";
+import { Container, Content } from "./ui";
+import { Title } from "@components/Title";
 
 export const Section: FC<SectionProps> = ({
   children,
@@ -11,7 +12,7 @@ export const Section: FC<SectionProps> = ({
   return (
     <Container withBackground={withBackground === true} data-testid={testID}>
       <Content>
-        <Title>{title}</Title>
+        <Title level="2">{title}</Title>
         {children}
       </Content>
     </Container>

@@ -22,12 +22,6 @@ export const Container = styled.section<ContainerProps>`
     `}
 `;
 
-export const Title = styled.h2`
-  text-align: center;
-  margin-bottom: 56px;
-  font-size: 5.5rem;
-`;
-
 export const Content = styled.div`
   width: max(66%, 500px);
   font-size: 1.8rem;

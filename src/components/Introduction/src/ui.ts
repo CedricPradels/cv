@@ -54,11 +54,6 @@ export const Description = styled.div`
   margin-bottom: 52px;
 `;
 
-export const Title = styled.div`
-  margin-bottom: 36px;
-  font-size: 55px;
-`;
-
 export const ButtonWrapper = styled.div`
   display: flex;
   gap: 16px;

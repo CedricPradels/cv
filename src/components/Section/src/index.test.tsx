@@ -1,11 +1,12 @@
 import { Section } from "@components/Section";
+import { Title } from "@components/Title";
 import { render } from "@utils/customRender";
 
 describe(Section.name, () => {
   it("should render a heading", () => {
-    const { queryByRole } = render(<Section title="lorem ipsum" />);
+    const { queryByTestId } = render(<Section title="lorem ipsum" />);
 
-    expect(queryByRole("heading")).toHaveTextContent("lorem ipsum");
+    expect(queryByTestId(Title.name)).toHaveTextContent("lorem ipsum");
   });
 
   it("should render a children", () => {
