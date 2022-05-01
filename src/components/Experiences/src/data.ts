@@ -25,7 +25,7 @@ export const data = [
     missions: [],
   },
   {
-    start: new Date("2013"),
+    start: new Date("2013-09-16"),
     end: new Date("2014"),
     job: "Technicien de maintenance",
     company: "MTO",
