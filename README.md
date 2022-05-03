@@ -1,36 +1,108 @@
 # Points
 
-| 1 | Changer une couleur |
-| 2 | Créer un composant simple (ex.: Title) |
-| 3 | Assemblage de composants simples |
-| 5 | Créer un composant sandard |
-| 8 | Créér une composant complexe |
-| 13 | |
-| 21 | |
+| pts | Exemple                                |
+| --- | -------------------------------------- |
+| 1   | Changer une couleur                    |
+| 2   | Créer un composant simple (ex.: Title) |
+| 3   | Assemblage de composants simples       |
+| 5   | Créer un composant sandard             |
+| 8   | Créér une composant complexe           |
+| 13  |                                        |
+| 21  |                                        |
+
+# Sprints
+
+| N°  | Debut | Fin   | Pts embarqués | Pts réalisés |
+| --- | ----- | ----- | ------------- | ------------ |
+| 0   | 18/04 | 01/05 | 18            | 18           |
+| 1   | -     | -     |               |              |
 
 # Produit
 
 ## Sandbox
 
-### Other Section
+### Mobile design
 
-### Additional section
+### Side project Section
 
-### Formation section
+En tant que recruteur,
+j'ai besoin de voir de quoi est capable le candidat
+
+### Print
+
+En tant que chasseur de tête,
+j'ai besoin de pouvoir télécharger ou imprimer le cv au format pdf
 
 ## Refinment
 
 ## Ready
 
-## Sprint
-
-Goals: sections skills et expériences en ligne. TU fonctionnels et réalisés.
+# Sprint
 
 ## Todo
+
+### Other AWS tools
+
+En tant que developpeur,
+j'ai besoin d'apprendre à utiliser d'autre services AWS
+
+En tant qu'utilisateur,
+J'ai besoin que le site soit performant
+
+points 3
+
+- [ ] Etudier les ajouts de services pertinents
+
+### Maquette Mobile
+
+En tant que développeur
+j'ai besoin d'avoir une maquette pour le design mobile
+
+points 8
+
+- [ ] Design Section intro
+- [ ] Design Section skills
+- [ ] Design Section exp
+- [ ] Design Section other
+- [ ] Design Section training
+- [ ] Design Section contact
+- [ ] Design Section
+
+### Training Section
+
+En tant que chasseur de tête,
+j'ai besoin de voir le cursus universitaire et de formation du candidat
+
+Points 2
+
+- [ ] Créer fichier de données
+- [ ] Créer composant Training
+
+### Contacts Section
+
+En tant que chasseur de tête,
+J'ai besoin d'avoir le contact du candat
+
+Points 2
+
+- [ ] Créer fichier de données
+- [ ] Créer composant Contact
+
+### Other Section
+
+En tant que chasseur de tête,
+J'ai besoin d'avoir des informations complémentaires sur le candidat
+
+Points 2
+
+- [ ] Créer fichier de données
+- [ ] Créer composant Other
 
 ## Doing
 
 ## Done
+
+## Archives
 
 ### Experiences Section
 
