@@ -88,6 +88,8 @@ Points 2
 - [ ] Créer fichier de données
 - [ ] Créer composant Contact
 
+## Doing
+
 ### Other Section
 
 En tant que chasseur de tête,
@@ -95,10 +97,8 @@ J'ai besoin d'avoir des informations complémentaires sur le candidat
 
 Points 2
 
-- [ ] Créer fichier de données
+- [x] Créer fichier de données
 - [ ] Créer composant Other
-
-## Doing
 
 ## Done
 
