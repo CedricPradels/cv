@@ -2,7 +2,7 @@ export const data = [
   {
     date: new Date("2020"),
     title: "Formation développeur",
-    school: "Le Reéacteur",
+    school: "Le Reacteur",
     themes: ["React", "ReactNative", "JavaScript", "Express", "MongoDB"],
   },
   {
@@ -25,4 +25,4 @@ export const data = [
     title: "BEP Electrotechnique",
     school: "Foyer des PTT de cachan",
   },
-].sort((a, b) => a.date.getTime() - b.date.getTime());
+].sort((a, b) => b.date.getTime() - a.date.getTime());
