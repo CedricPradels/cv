@@ -90,6 +90,8 @@ Points 2
 
 ## Doing
 
+## Done
+
 ### Training Section
 
 En tant que chasseur de tête,
@@ -99,8 +101,6 @@ Points 2
 
 - [x] Créer fichier de données
 - [x] Créer composant Training
-
-## Done
 
 ## Archives
 
