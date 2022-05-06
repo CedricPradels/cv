@@ -68,16 +68,6 @@ points 8
 - [ ] Design Section contact
 - [ ] Design Section
 
-### Contacts Section
-
-En tant que chasseur de tête,
-J'ai besoin d'avoir le contact du candat
-
-Points 2
-
-- [ ] Créer fichier de données
-- [ ] Créer composant Contact
-
 ### Other Section
 
 En tant que chasseur de tête,
@@ -91,6 +81,16 @@ Points 2
 ## Doing
 
 ## Done
+
+### Contacts Section
+
+En tant que chasseur de tête,
+J'ai besoin d'avoir le contact du candat
+
+Points 2
+
+- [x] Créer fichier de données
+- [x] Créer composant Contact
 
 ### Training Section
 
