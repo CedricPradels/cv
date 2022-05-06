@@ -3,7 +3,7 @@ import { Other } from "@components/Other";
 import { Introduction } from "@components/Introduction";
 import { Skills } from "@components/Skills";
 import { Training } from "@components/Training";
-import { Contact } from "@components/Contact";
+import { Contacts } from "@components/Contacts";
 import { VFC } from "react";
 import { Container, Wrapper } from "./ui";
 
@@ -23,7 +23,7 @@ export const Cv: VFC = () => {
           <Other />
         </div>
       </Wrapper>
-      <Contact />
+      <Contacts />
     </Container>
   );
 };

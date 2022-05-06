@@ -78,16 +78,6 @@ Points 2
 - [ ] Créer fichier de données
 - [ ] Créer composant Training
 
-### Contacts Section
-
-En tant que chasseur de tête,
-J'ai besoin d'avoir le contact du candat
-
-Points 2
-
-- [ ] Créer fichier de données
-- [ ] Créer composant Contact
-
 ### Other Section
 
 En tant que chasseur de tête,
@@ -99,6 +89,16 @@ Points 2
 - [ ] Créer composant Other
 
 ## Doing
+
+### Contacts Section
+
+En tant que chasseur de tête,
+J'ai besoin d'avoir le contact du candat
+
+Points 2
+
+- [ ] Créer fichier de données
+- [ ] Créer composant Contact
 
 ## Done
 
