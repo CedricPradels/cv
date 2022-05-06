@@ -15,7 +15,7 @@
 | N°  | Debut | Fin   | Pts embarqués | Pts réalisés |
 | --- | ----- | ----- | ------------- | ------------ |
 | 0   | 18/04 | 01/05 | 18            | 18           |
-| 1   | -     | -     |               |              |
+| 1   | 03/05 | -     |               |              |
 
 # Produit
 
@@ -68,6 +68,10 @@ points 8
 - [ ] Design Section contact
 - [ ] Design Section
 
+## Doing
+
+## Done
+
 ### Training Section
 
 En tant que chasseur de tête,
@@ -75,8 +79,8 @@ j'ai besoin de voir le cursus universitaire et de formation du candidat
 
 Points 2
 
-- [ ] Créer fichier de données
-- [ ] Créer composant Training
+- [x] Créer fichier de données
+- [x] Créer composant Training
 
 ### Contacts Section
 
@@ -85,12 +89,8 @@ J'ai besoin d'avoir le contact du candat
 
 Points 2
 
-- [ ] Créer fichier de données
-- [ ] Créer composant Contact
-
-## Doing
-
-## Done
+- [x] Créer fichier de données
+- [x] Créer composant Contact
 
 ### Other Section
 
@@ -101,6 +101,26 @@ Points 2
 
 - [x] Créer fichier de données
 - [x] Créer composant Other
+
+### Contacts Section
+
+En tant que chasseur de tête,
+J'ai besoin d'avoir le contact du candat
+
+Points 2
+
+- [x] Créer fichier de données
+- [x] Créer composant Contact
+
+### Training Section
+
+En tant que chasseur de tête,
+j'ai besoin de voir le cursus universitaire et de formation du candidat
+
+Points 2
+
+- [x] Créer fichier de données
+- [x] Créer composant Training
 
 ## Archives
 

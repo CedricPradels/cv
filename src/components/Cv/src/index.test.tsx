@@ -1,4 +1,4 @@
-import { Contact } from "@components/Contact";
+import { Contacts } from "@components/Contacts";
 import { Cv } from "@components/Cv";
 import { Experiences } from "@components/Experiences";
 import { Introduction } from "@components/Introduction";
@@ -17,7 +17,7 @@ describe(Cv.name, () => {
   it("should render the contact", () => {
     const { queryByTestId } = render(<Cv />);
 
-    expect(queryByTestId(Contact.name)).toBeInTheDocument();
+    expect(queryByTestId(Contacts.name)).toBeInTheDocument();
   });
 
   it("should render the experiences", () => {

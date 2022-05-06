@@ -7,7 +7,7 @@ import { OtherItem } from "./ui";
 
 export const Other: VFC = () => {
   return (
-    <Section title="Autre" data-testid={Other.name}>
+    <Section title="Autre" testID={Other.name}>
       <ul>
         {data.map(({ items, title }) => (
           <OtherItem key={title}>
